@@ -1,0 +1,23 @@
+[project]
+name = "gi-notifier"
+version = "0.1.0"
+description = "Notifier for Genshin Impact"
+authors = [
+    {name = "Akashdeep Dhar",email = "akashdeep.dhar@gmail.com"}
+]
+license = {text = "GPL-3.0-or-later"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-telegram-bot (>=22.1,<23.0)",
+    "apscheduler (>=3.11.0,<4.0.0)",
+    "click (>=8.2.1,<9.0.0)",
+    "pytz (>=2025.2,<2026.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gi-notifier = "gi_notifier.main:main"
