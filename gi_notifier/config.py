@@ -1,10 +1,9 @@
 from logging import getLogger
 from logging.config import dictConfig
+from pathlib import Path
 
 BOTTOKEN = ""
-CHATIDEN = ""
 TIMEZONE = "Asia/Kolkata"
-HOURLIST = [iter for iter in range(24) if iter % 4 == 0]
 
 logrconf = {
     "version": 1,
@@ -32,3 +31,7 @@ logrconf = {
 dictConfig(logrconf)
 
 logger = getLogger(__name__)
+
+HOURLIST = [iter for iter in range(24) if iter % 4 == 0]
+
+DATA_FILE = Path("bot_user_data.json")
