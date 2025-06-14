@@ -1,16 +1,27 @@
 from asyncio import run
 
-from click import command, option
+from click import Path, command, option
 
-from . import conf, core
+from . import config, runner
+from pathlib import Path as pathtype
 
 
 @command()
-@option("--bottoken", required=True)
-@option("--chatiden", required=True)
-@option("--timezone", required=False, default=conf.TIMEZONE)
-def main(bottoken, chatiden, timezone):
-    conf.BOTTOKEN = bottoken
-    conf.CHATIDEN = chatiden
-    conf.TIMEZONE = timezone
-    run(core.schedule())
+@option("--bottoken",
+        required=True,
+        help="Telegram Bot token")
+@option("--timezone",
+        required=False,
+        default=config.TIMEZONE,
+        help="Timezone of the place for running the telegram bot")
+@option("--database",
+        required=False,
+        type=Path(dir_okay=False),
+        help="Path to the user data JSON file"
+)
+def main(bottoken: str, timezone: str, database: Path):
+    config.BOTTOKEN = bottoken
+    config.TIMEZONE = timezone
+    if database:
+        config.DATA_FILE = pathtype(database)
+    run(runner.runner())
