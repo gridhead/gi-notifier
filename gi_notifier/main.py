@@ -1,6 +1,8 @@
-from click import option, command
-from . import conf, core
 from asyncio import run
+
+from click import command, option
+
+from . import conf, core
 
 
 @command()

@@ -1,14 +1,16 @@
-from telegram import Bot
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from . import conf
-from datetime import datetime
-from pytz import timezone
 from asyncio import Event
+
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from pytz import timezone
+from telegram import Bot
+
+from . import conf
+from .temp import message
 
 
 async def task():
     sender = Bot(conf.BOTTOKEN)
-    text = conf.WEEKDICT.get(datetime.now().weekday())
+    text = message.todays_notification()
     await sender.send_message(chat_id=conf.CHATIDEN, text=text, parse_mode="HTML")
     conf.logger.info("Notification sent")
 
