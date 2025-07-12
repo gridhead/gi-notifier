@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from enum import Enum
+from urllib.parse import quote
 
 
 class Weekday(Enum):
@@ -131,10 +132,17 @@ class ConstantResource:
 
 @dataclass
 class DailyCheckin:
+    """
+    Dataclass for daily check-in reminder.
+    """
+
     reward: Drop = field(
-        default_factory = lambda: Drop(
-            item = Item("HoYoLAB Community Daily Check-In", "https://genshin-impact.fandom.com/wiki/HoYoLAB_Community_Daily_Check-In"),
-            source = Source("HoYoLAB", "https://www.hoyolab.com")
+        default_factory=lambda: Drop(
+            item=Item(
+                "HoYoLAB Community Daily Check-In",
+                "https://genshin-impact.fandom.com/wiki/HoYoLAB_Community_Daily_Check-In",
+            ),
+            source=Source("HoYoLAB", "https://www.hoyolab.com"),
         )
     )
 
@@ -143,3 +151,36 @@ class DailyCheckin:
 class MaterialGroup:
     drop: Drop
     available_on: list[Weekday]
+
+
+@dataclass
+class ShopReset:
+    """
+    Dataclass for monthly shop reset to claim Intertwined and Acquaint fates.
+    """
+
+    acquaint_fate: Drop = field(
+        default_factory=lambda: Drop(
+            item=Item(
+                "Acquaint Fate",
+                "https://genshin-impact.fandom.com/wiki/Acquaint_Fate",
+            ),
+        )
+    )
+    intertwined_fate: Drop = field(
+        default_factory=lambda: Drop(
+            item=Item(
+                "Intertwined Fate",
+                "https://genshin-impact.fandom.com/wiki/Intertwined_Fate",
+            ),
+        )
+    )
+
+    def to_purchase(self) -> str:
+        return (
+            f"""Purchase """
+            f"""<a href="{self.acquaint_fate.item.link}">{self.acquaint_fate.item.name}</a> """
+            f"""and """
+            f"""<a href="{self.intertwined_fate.item.link}">{self.intertwined_fate.item.name}</a> """  # noqa: E501
+            f"""from <a href="{f"https://genshin-impact.fandom.com/wiki/{quote("Paimon's_Bargains#Stardust_Exchange")}"}">Stardust Exchange</a>"""  # noqa: E501
+        )
