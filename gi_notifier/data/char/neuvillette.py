@@ -17,13 +17,25 @@ class Neuvillette(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Fontemer Unihorn", f"https://genshin-impact.fandom.com/wiki/{quote("Fontemer_Unihorn")}"),
-            source = Source("Millennial Pearl Seahorse", f"https://genshin-impact.fandom.com/wiki/{quote("Millennial_Pearl_Seahorse")}")
+            item=Item(
+                "Fontemer Unihorn",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Fontemer_Unihorn")}",
+            ),
+            source=Source(
+                "Millennial Pearl Seahorse",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Millennial_Pearl_Seahorse")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Everamber", f"https://genshin-impact.fandom.com/wiki/{quote("Everamber")}"),
-            source = Source("The Realm of Beginnings", f"https://genshin-impact.fandom.com/wiki/{quote("The_Realm_of_Beginnings")}")
+            item=Item(
+                "Everamber",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Everamber")}",
+            ),
+            source=Source(
+                "The Realm of Beginnings",
+                f"https://genshin-impact.fandom.com/wiki/{quote("The_Realm_of_Beginnings")}",
+            ),
         )

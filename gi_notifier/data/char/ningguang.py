@@ -17,13 +17,25 @@ class Ningguang(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Basalt Pillar", f"https://genshin-impact.fandom.com/wiki/{quote("Basalt_Pillar")}"),
-            source = Source("Geo Hypostasis", f"https://genshin-impact.fandom.com/wiki/{quote("Geo_Hypostasis")}")
+            item=Item(
+                "Basalt Pillar",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Basalt_Pillar")}",
+            ),
+            source=Source(
+                "Geo Hypostasis",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Geo_Hypostasis")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Spirit Locket of Boreas", f"https://genshin-impact.fandom.com/wiki/{quote("Spirit_Locket_of_Boreas")}"),
-            source = Source("Wolf of the North Challenge", f"https://genshin-impact.fandom.com/wiki/{quote("Wolf_of_the_North_Challenge")}")
+            item=Item(
+                "Spirit Locket of Boreas",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Spirit_Locket_of_Boreas")}",
+            ),
+            source=Source(
+                "Wolf of the North Challenge",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Wolf_of_the_North_Challenge")}",
+            ),
         )

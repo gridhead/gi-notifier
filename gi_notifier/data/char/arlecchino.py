@@ -17,13 +17,25 @@ class Arlecchino(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Fragment of a Golden Melody", f"https://genshin-impact.fandom.com/wiki/{quote("Fragment_of_a_Golden_Melody")}"),
-            source = Source("Statue of Marble and Brass", f"https://genshin-impact.fandom.com/wiki/{quote("\"Statue of Marble and Brass\"")}")
+            item=Item(
+                "Fragment of a Golden Melody",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Fragment_of_a_Golden_Melody")}",
+            ),
+            source=Source(
+                "Statue of Marble and Brass",
+                f"https://genshin-impact.fandom.com/wiki/{quote("\"Statue of Marble and Brass\"")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Fading Candle", f"https://genshin-impact.fandom.com/wiki/{quote("Fading_Candle")}"),
-            source = Source("The Knave", f"https://genshin-impact.fandom.com/wiki/{quote("The_Knave")}")
+            item=Item(
+                "Fading Candle",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Fading_Candle")}",
+            ),
+            source=Source(
+                "The Knave",
+                f"https://genshin-impact.fandom.com/wiki/{quote("The_Knave")}",
+            ),
         )

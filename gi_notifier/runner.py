@@ -6,7 +6,7 @@ from telegram.ext import ApplicationBuilder, ChatMemberHandler, CommandHandler
 
 from . import config
 from .handler.chat_handler import addition
-from .handler.command_handler import start, resinday
+from .handler.command_handler import resinday, start
 from .scheduler import scheduled_task
 
 

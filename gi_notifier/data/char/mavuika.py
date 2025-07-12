@@ -17,13 +17,25 @@ class Mavuika(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Gold-Inscribed Secret Source Core", f"https://genshin-impact.fandom.com/wiki/{quote("Gold-Inscribed_Secret_Source_Core")}"),
-            source = Source("Secret Source Automaton: Configuration Device", f"https://genshin-impact.fandom.com/wiki/{quote("Secret_Source_Automaton:_Configuration_Device")}")
+            item=Item(
+                "Gold-Inscribed Secret Source Core",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Gold-Inscribed_Secret_Source_Core")}",
+            ),
+            source=Source(
+                "Secret Source Automaton: Configuration Device",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Secret_Source_Automaton:_Configuration_Device")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Eroded Horn", f"https://genshin-impact.fandom.com/wiki/{quote("Eroded_Horn")}"),
-            source = Source("Stone Stele Records", f"https://genshin-impact.fandom.com/wiki/{quote("Stone_Stele_Records")}")
+            item=Item(
+                "Eroded Horn",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Eroded_Horn")}",
+            ),
+            source=Source(
+                "Stone Stele Records",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Stone_Stele_Records")}",
+            ),
         )

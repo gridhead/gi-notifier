@@ -17,13 +17,25 @@ class Klee(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Everflame Seed", f"https://genshin-impact.fandom.com/wiki/{quote("Everflame_Seed")}"),
-            source = Source("Pyro Regisvines", f"https://genshin-impact.fandom.com/wiki/{quote("Pyro_Regisvines")}")
+            item=Item(
+                "Everflame Seed",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Everflame_Seed")}",
+            ),
+            source=Source(
+                "Pyro Regisvines",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Pyro_Regisvines")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Ring of Boreas", f"https://genshin-impact.fandom.com/wiki/{quote("Ring_of_Boreas")}"),
-            source = Source("Wolf of the North Challenge", f"https://genshin-impact.fandom.com/wiki/{quote("Wolf_of_the_North_Challenge")}")
+            item=Item(
+                "Ring of Boreas",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Ring_of_Boreas")}",
+            ),
+            source=Source(
+                "Wolf of the North Challenge",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Wolf_of_the_North_Challenge")}",
+            ),
         )

@@ -17,13 +17,24 @@ class Qiqi(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Hoarfrost Core", f"https://genshin-impact.fandom.com/wiki/{quote("Hoarfrost_Core")}"),
-            source = Source("Cryo Regisvine", f"https://genshin-impact.fandom.com/wiki/{quote("Cryo_Regisvine")}")
+            item=Item(
+                "Hoarfrost Core",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Hoarfrost_Core")}",
+            ),
+            source=Source(
+                "Cryo Regisvine",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Cryo_Regisvine")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Tail of Boreas", f"https://genshin-impact.fandom.com/wiki/{quote("Tail_of_Boreas")}"),
-            source = Source("Andrius", f"https://genshin-impact.fandom.com/wiki/{quote("Andrius")}")
+            item=Item(
+                "Tail of Boreas",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Tail_of_Boreas")}",
+            ),
+            source=Source(
+                "Andrius", f"https://genshin-impact.fandom.com/wiki/{quote("Andrius")}"
+            ),
         )

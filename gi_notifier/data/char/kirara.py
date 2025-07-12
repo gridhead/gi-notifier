@@ -17,13 +17,25 @@ class Kirara(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Evergloom Ring", f"https://genshin-impact.fandom.com/wiki/{quote("Evergloom_Ring")}"),
-            source = Source("Iniquitous Baptist", f"https://genshin-impact.fandom.com/wiki/{quote("Iniquitous_Baptist")}")
+            item=Item(
+                "Evergloom Ring",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Evergloom_Ring")}",
+            ),
+            source=Source(
+                "Iniquitous Baptist",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Iniquitous_Baptist")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Everamber", f"https://genshin-impact.fandom.com/wiki/{quote("Everamber")}"),
-            source = Source("The Realm of Beginnings", f"https://genshin-impact.fandom.com/wiki/{quote("The_Realm_of_Beginnings")}")
+            item=Item(
+                "Everamber",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Everamber")}",
+            ),
+            source=Source(
+                "The Realm of Beginnings",
+                f"https://genshin-impact.fandom.com/wiki/{quote("The_Realm_of_Beginnings")}",
+            ),
         )

@@ -17,13 +17,25 @@ class Barbara(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Cleansing Heart", f"https://genshin-impact.fandom.com/wiki/{quote("Cleansing_Heart")}"),
-            source = Source("Rhodeia of Loch", f"https://genshin-impact.fandom.com/wiki/{quote("Rhodeia_of_Loch")}")
+            item=Item(
+                "Cleansing Heart",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Cleansing_Heart")}",
+            ),
+            source=Source(
+                "Rhodeia of Loch",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Rhodeia_of_Loch")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Ring of Boreas", f"https://genshin-impact.fandom.com/wiki/{quote("Ring_of_Boreas")}"),
-            source = Source("Wolf of the North Challenge", f"https://genshin-impact.fandom.com/wiki/{quote("Wolf_of_the_North_Challenge")}")
+            item=Item(
+                "Ring of Boreas",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Ring_of_Boreas")}",
+            ),
+            source=Source(
+                "Wolf of the North Challenge",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Wolf_of_the_North_Challenge")}",
+            ),
         )

@@ -17,13 +17,25 @@ class Noelle(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Basalt Pillar", f"https://genshin-impact.fandom.com/wiki/{quote("Basalt_Pillar")}"),
-            source = Source("Geo Hypostasis", f"https://genshin-impact.fandom.com/wiki/{quote("Geo_Hypostasis")}")
+            item=Item(
+                "Basalt Pillar",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Basalt_Pillar")}",
+            ),
+            source=Source(
+                "Geo Hypostasis",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Geo_Hypostasis")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Dvalin's Claw", f"http://genshin-impact.fandom.com/wiki/{quote("Dvalin's_Claw")}"),
-            source = Source("Confront Stormterror", f"https://genshin-impact.fandom.com/wiki/{quote("Confront_Stormterror")}")
+            item=Item(
+                "Dvalin's Claw",
+                f"http://genshin-impact.fandom.com/wiki/{quote("Dvalin's_Claw")}",
+            ),
+            source=Source(
+                "Confront Stormterror",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Confront_Stormterror")}",
+            ),
         )

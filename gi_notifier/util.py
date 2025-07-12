@@ -7,6 +7,7 @@ from .models.models import Resin, Weekday
 def get_today() -> Weekday:
     return Weekday(list(Weekday)[datetime.now().weekday()])
 
+
 def generate_daily_resin_plan(today: Weekday, characters: list[CharacterBase]) -> str:
     message_lines = [f"<b>{today.value}</b>", ""]
 

@@ -17,13 +17,25 @@ class ShikanoinHeizou(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Runic Fang", f"https://genshin-impact.fandom.com/wiki/{quote("Runic_Fang")}"),
-            source = Source("Ruin Serpent", f"https://genshin-impact.fandom.com/wiki/{quote("Ruin_Serpent")}")
+            item=Item(
+                "Runic Fang",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Runic_Fang")}",
+            ),
+            source=Source(
+                "Ruin Serpent",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Ruin_Serpent")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("The Meaning of Aeons", f"https://genshin-impact.fandom.com/wiki/{quote("The_Meaning_of_Aeons")}"),
-            source = Source("End of the Oneiric Euthymia", f"https://genshin-impact.fandom.com/wiki/{quote("End_of_the_Oneiric_Euthymia")}")
+            item=Item(
+                "The Meaning of Aeons",
+                f"https://genshin-impact.fandom.com/wiki/{quote("The_Meaning_of_Aeons")}",
+            ),
+            source=Source(
+                "End of the Oneiric Euthymia",
+                f"https://genshin-impact.fandom.com/wiki/{quote("End_of_the_Oneiric_Euthymia")}",
+            ),
         )

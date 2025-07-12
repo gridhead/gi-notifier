@@ -17,13 +17,25 @@ class Yaoyao(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Quelled Creeper", f"https://genshin-impact.fandom.com/wiki/{quote("Quelled_Creeper")}"),
-            source = Source("Dendro Hypostasis", f"https://genshin-impact.fandom.com/wiki/{quote("Dendro_Hypostasis")}")
+            item=Item(
+                "Quelled Creeper",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Quelled_Creeper")}",
+            ),
+            source=Source(
+                "Dendro Hypostasis",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Dendro_Hypostasis")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Daka's Bell", f"https://genshin-impact.fandom.com/wiki/{quote("Daka's_Bell")}"),
-            source = Source("Joururi Workshop", f"https://genshin-impact.fandom.com/wiki/{quote("Joururi_Workshop")}")
+            item=Item(
+                "Daka's Bell",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Daka's_Bell")}",
+            ),
+            source=Source(
+                "Joururi Workshop",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Joururi_Workshop")}",
+            ),
         )

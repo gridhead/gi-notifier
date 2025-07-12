@@ -6,8 +6,13 @@ class Resistance(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Resistance Books", "https://genshin-impact.fandom.com/wiki/Resistance_Book"),
-            source=Source("Forsaken Rift", "https://genshin-impact.fandom.com/wiki/Forsaken_Rift")
+            item=Item(
+                "Resistance Books",
+                "https://genshin-impact.fandom.com/wiki/Resistance_Book",
+            ),
+            source=Source(
+                "Forsaken Rift", "https://genshin-impact.fandom.com/wiki/Forsaken_Rift"
+            ),
         )
 
     @property

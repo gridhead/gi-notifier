@@ -26,14 +26,16 @@ async def scheduled_task():
             if chat_id not in seen:
                 try:
                     await sender.send_message(
-                        chat_id=chat_id,
-                        text=resin_plan,
-                        parse_mode="HTML"
+                        chat_id=chat_id, text=resin_plan, parse_mode="HTML"
                     )
-                    config.logger.debug(f"Scheduled notification sent to chat: {chat_id}")
+                    config.logger.debug(
+                        f"Scheduled notification sent to chat: {chat_id}"
+                    )
                     sent_count += 1
                 except TelegramError as e:
-                    config.logger.warning(f"Failed to send notification to chat: {chat_id}: {e}")
+                    config.logger.warning(
+                        f"Failed to send notification to chat: {chat_id}: {e}"
+                    )
             seen.add(chat_id)
 
     config.logger.debug(f"Scheduled notification sent to {sent_count} chat(s).")

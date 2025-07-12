@@ -6,8 +6,12 @@ class Conflict(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Conflict Books", "https://genshin-impact.fandom.com/wiki/Conflict_Book"),
-            source=Source("Blazing Ruins", "https://genshin-impact.fandom.com/wiki/Blazing_Ruins")
+            item=Item(
+                "Conflict Books", "https://genshin-impact.fandom.com/wiki/Conflict_Book"
+            ),
+            source=Source(
+                "Blazing Ruins", "https://genshin-impact.fandom.com/wiki/Blazing_Ruins"
+            ),
         )
 
     @property

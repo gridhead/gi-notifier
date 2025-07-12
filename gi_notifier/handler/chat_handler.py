@@ -31,10 +31,13 @@ async def addition(update: Update, context: ContextTypes.DEFAULT_TYPE):
             save_data(data)
 
         await context.bot.send_message(
-            chat_id=chat_member.chat.id,
-            text="Hello! I'm now part of this group."
+            chat_id=chat_member.chat.id, text="Hello! I'm now part of this group."
         )
-        config.logger.debug(f"Bot added to chat: {chat_member.chat.title}, id:{chat_member.chat.id}")  #noqa: E501
+        config.logger.debug(
+            f"Bot added to chat: {chat_member.chat.title}, id:{chat_member.chat.id}"
+        )
 
     elif chat_member.new_chat_member.status == "left":
-        config.logger.debug(f"Bot removed from chat: {chat_member.chat.title}, id:{chat_member.chat.id}")  #noqa: E501
+        config.logger.debug(
+            f"Bot removed from chat: {chat_member.chat.title}, id:{chat_member.chat.id}"
+        )

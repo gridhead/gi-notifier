@@ -17,13 +17,25 @@ class KamisatoAyaka(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Perpetual Heart", f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Heart")}"),
-            source = Source("Perpetual Mechanical Array", f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Mechanical_Array")}")
+            item=Item(
+                "Perpetual Heart",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Heart")}",
+            ),
+            source=Source(
+                "Perpetual Mechanical Array",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Mechanical_Array")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Bloodjade Branch", f"https://genshin-impact.fandom.com/wiki/{quote("Bloodjade_Branch")}"),
-            source = Source("Beneath the Dragon-Queller", f"https://genshin-impact.fandom.com/wiki/{quote("Beneath_the_Dragon-Queller")}")
+            item=Item(
+                "Bloodjade Branch",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Bloodjade_Branch")}",
+            ),
+            source=Source(
+                "Beneath the Dragon-Queller",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Beneath_the_Dragon-Queller")}",
+            ),
         )

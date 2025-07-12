@@ -17,13 +17,25 @@ class Gorou(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Perpetual Heart", f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Heart")}"),
-            source = Source("Perpetual Mechanical Array", f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Mechanical_Array")}")
+            item=Item(
+                "Perpetual Heart",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Heart")}",
+            ),
+            source=Source(
+                "Perpetual Mechanical Array",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Mechanical_Array")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Molten Moment", f"https://genshin-impact.fandom.com/wiki/{quote("Molten_Moment")}"),
-            source = Source("Narukami Island: Tenshukaku", f"https://genshin-impact.fandom.com/wiki/{quote("Narukami_Island:_Tenshukaku")}")
+            item=Item(
+                "Molten Moment",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Molten_Moment")}",
+            ),
+            source=Source(
+                "Narukami Island: Tenshukaku",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Narukami_Island:_Tenshukaku")}",
+            ),
         )
