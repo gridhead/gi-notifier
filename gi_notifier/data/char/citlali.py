@@ -17,13 +17,25 @@ class Citlali(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Talisman of the Enigmatic Land", f"https://genshin-impact.fandom.com/wiki/{quote("Talisman_of_the_Enigmatic_Land")}"),
-            source = Source("Wayward Hermetic Spiritspeaker", f"https://genshin-impact.fandom.com/wiki/{quote("Wayward_Hermetic_Spiritspeaker")}")
+            item=Item(
+                "Talisman of the Enigmatic Land",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Talisman_of_the_Enigmatic_Land")}",
+            ),
+            source=Source(
+                "Wayward Hermetic Spiritspeaker",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Wayward_Hermetic_Spiritspeaker")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Denial and Judgment", f"https://genshin-impact.fandom.com/wiki/{quote("Denial_and_Judgment")}"),
-            source = Source("The Knave", f"https://genshin-impact.fandom.com/wiki/{quote("The_Knave")}")
+            item=Item(
+                "Denial and Judgment",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Denial_and_Judgment")}",
+            ),
+            source=Source(
+                "The Knave",
+                f"https://genshin-impact.fandom.com/wiki/{quote("The_Knave")}",
+            ),
         )

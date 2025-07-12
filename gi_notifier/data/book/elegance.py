@@ -6,8 +6,12 @@ class Elegance(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Elegance Books", "https://genshin-impact.fandom.com/wiki/Elegance_Book"),
-            source=Source("Violet Court", "https://genshin-impact.fandom.com/wiki/Violet_Court")
+            item=Item(
+                "Elegance Books", "https://genshin-impact.fandom.com/wiki/Elegance_Book"
+            ),
+            source=Source(
+                "Violet Court", "https://genshin-impact.fandom.com/wiki/Violet_Court"
+            ),
         )
 
     @property

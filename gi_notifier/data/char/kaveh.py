@@ -17,13 +17,25 @@ class Kaveh(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Quelled Creeper", f"https://genshin-impact.fandom.com/wiki/{quote("Quelled_Creeper")}"),
-            source = Source("Dendro Hypostasis", f"https://genshin-impact.fandom.com/wiki/{quote("Dendro_Hypostasis")}")
+            item=Item(
+                "Quelled Creeper",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Quelled_Creeper")}",
+            ),
+            source=Source(
+                "Dendro Hypostasis",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Dendro_Hypostasis")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Primordial Greenbloom", f"https://genshin-impact.fandom.com/wiki/{quote("Primordial_Greenbloom")}"),
-            source = Source("The Realm of Beginnings", f"https://genshin-impact.fandom.com/wiki/{quote("The_Realm_of_Beginnings")}")
+            item=Item(
+                "Primordial Greenbloom",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Primordial_Greenbloom")}",
+            ),
+            source=Source(
+                "The Realm of Beginnings",
+                f"https://genshin-impact.fandom.com/wiki/{quote("The_Realm_of_Beginnings")}",
+            ),
         )

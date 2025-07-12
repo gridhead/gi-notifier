@@ -6,8 +6,13 @@ class Order(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Order Books", "https://genshin-impact.fandom.com/wiki/Order_Book"),
-            source=Source("Pale Forgotten Glory", "https://genshin-impact.fandom.com/wiki/Pale_Forgotten_Glory")
+            item=Item(
+                "Order Books", "https://genshin-impact.fandom.com/wiki/Order_Book"
+            ),
+            source=Source(
+                "Pale Forgotten Glory",
+                "https://genshin-impact.fandom.com/wiki/Pale_Forgotten_Glory",
+            ),
         )
 
     @property

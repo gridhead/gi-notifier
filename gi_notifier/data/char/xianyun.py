@@ -17,13 +17,25 @@ class Xianyun(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Cloudseam Scale", f"https://genshin-impact.fandom.com/wiki/{quote("Cloudseam_Scale")}"),
-            source = Source("Solitary Suanni", f"https://genshin-impact.fandom.com/wiki/{quote("Solitary_Suanni")}")
+            item=Item(
+                "Cloudseam Scale",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Cloudseam_Scale")}",
+            ),
+            source=Source(
+                "Solitary Suanni",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Solitary_Suanni")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Lightless Eye of the Maelstrom", f"https://genshin-impact.fandom.com/wiki/{quote("Lightless_Eye_of_the_Maelstrom")}"),
-            source = Source("All-Devouring Narwhal", f"https://genshin-impact.fandom.com/wiki/{quote("All-Devouring_Narwhal")}")
+            item=Item(
+                "Lightless Eye of the Maelstrom",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Lightless_Eye_of_the_Maelstrom")}",
+            ),
+            source=Source(
+                "All-Devouring Narwhal",
+                f"https://genshin-impact.fandom.com/wiki/{quote("All-Devouring_Narwhal")}",
+            ),
         )

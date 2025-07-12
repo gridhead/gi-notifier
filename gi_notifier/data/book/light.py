@@ -6,8 +6,12 @@ class Light(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Light Books", "https://genshin-impact.fandom.com/wiki/Light_Book"),
-            source=Source("Violet Court", "https://genshin-impact.fandom.com/wiki/Violet_Court")
+            item=Item(
+                "Light Books", "https://genshin-impact.fandom.com/wiki/Light_Book"
+            ),
+            source=Source(
+                "Violet Court", "https://genshin-impact.fandom.com/wiki/Violet_Court"
+            ),
         )
 
     @property

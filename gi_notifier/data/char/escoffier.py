@@ -17,13 +17,25 @@ class Escoffier(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Secret Source Airflow Accumulator", f"https://genshin-impact.fandom.com/wiki/{quote("Secret_Source_Airflow_Accumulator")}"),
-            source = Source("Secret Source Automaton: Overseer Device", f"https://genshin-impact.fandom.com/wiki/{quote("Secret_Source_Automaton:_Overseer_Device")}")
+            item=Item(
+                "Secret Source Airflow Accumulator",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Secret_Source_Airflow_Accumulator")}",
+            ),
+            source=Source(
+                "Secret Source Automaton: Overseer Device",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Secret_Source_Automaton:_Overseer_Device")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Eroded Horn", f"https://genshin-impact.fandom.com/wiki/{quote("Eroded_Horn")}"),
-            source = Source("Stone Stele Records", f"https://genshin-impact.fandom.com/wiki/{quote("Stone_Stele_Records")}")
+            item=Item(
+                "Eroded Horn",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Eroded_Horn")}",
+            ),
+            source=Source(
+                "Stone Stele Records",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Stone_Stele_Records")}",
+            ),
         )

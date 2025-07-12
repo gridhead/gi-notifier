@@ -17,13 +17,25 @@ class KujouSara(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Storm Beads", f"https://genshin-impact.fandom.com/wiki/{quote("Storm_Beads")}"),
-            source = Source("Thunder Manifestation", f"https://genshin-impact.fandom.com/wiki/{quote("Thunder_Manifestation")}")
+            item=Item(
+                "Storm Beads",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Storm_Beads")}",
+            ),
+            source=Source(
+                "Thunder Manifestation",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Thunder_Manifestation")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Ashen Heart", f"https://genshin-impact.fandom.com/wiki/{quote("Ashen_Heart")}"),
-            source = Source("Narukami Island: Tenshukaku", f"https://genshin-impact.fandom.com/wiki/{quote("Narukami_Island:_Tenshukaku")}")
+            item=Item(
+                "Ashen Heart",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Ashen_Heart")}",
+            ),
+            source=Source(
+                "Narukami Island: Tenshukaku",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Narukami_Island:_Tenshukaku")}",
+            ),
         )

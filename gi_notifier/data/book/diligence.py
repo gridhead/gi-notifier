@@ -6,8 +6,14 @@ class Diligence(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Diligence Books", "https://genshin-impact.fandom.com/wiki/Diligence_Book"),
-            source=Source("Taishan Mansion", "https://genshin-impact.fandom.com/wiki/Taishan_Mansion")
+            item=Item(
+                "Diligence Books",
+                "https://genshin-impact.fandom.com/wiki/Diligence_Book",
+            ),
+            source=Source(
+                "Taishan Mansion",
+                "https://genshin-impact.fandom.com/wiki/Taishan_Mansion",
+            ),
         )
 
     @property

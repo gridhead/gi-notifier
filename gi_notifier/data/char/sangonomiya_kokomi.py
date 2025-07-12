@@ -17,13 +17,25 @@ class SangonomiyaKokomi(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Dew of Repudiation", f"https://genshin-impact.fandom.com/wiki/{quote("Dew_of_Repudiation")}"),
-            source = Source("Hydro Hypostases", f"https://genshin-impact.fandom.com/wiki/{quote("Hydro_Hypostases")}")
+            item=Item(
+                "Dew of Repudiation",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Dew_of_Repudiation")}",
+            ),
+            source=Source(
+                "Hydro Hypostases",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Hydro_Hypostases")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Hellfire Butterfly", f"https://genshin-impact.fandom.com/wiki/{quote("Hellfire_Butterfly")}"),
-            source = Source("Narukami Island: Tenshukaku", f"https://genshin-impact.fandom.com/wiki/{quote("Narukami_Island:_Tenshukaku")}")
+            item=Item(
+                "Hellfire Butterfly",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Hellfire_Butterfly")}",
+            ),
+            source=Source(
+                "Narukami Island: Tenshukaku",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Narukami_Island:_Tenshukaku")}",
+            ),
         )

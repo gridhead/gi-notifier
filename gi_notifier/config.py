@@ -5,7 +5,7 @@ from pathlib import Path
 BOTTOKEN = ""
 TIMEZONE = "Asia/Kolkata"
 HOURLIST = [iter for iter in range(24) if iter % 4 == 0]
-DATA_FILE = Path("/tmp/gi-notifier/bot_user_data.json")  #noqa: S108
+DATA_FILE = Path("/tmp/gi-notifier/bot_user_data.json")  # noqa: S108
 
 logrconf = {
     "version": 1,

@@ -6,8 +6,14 @@ class Prosperity(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Prosperity Books", "https://genshin-impact.fandom.com/wiki/Prosperity_Book"),
-            source=Source("Taishan Mansion", "https://genshin-impact.fandom.com/wiki/Taishan_Mansion")
+            item=Item(
+                "Prosperity Books",
+                "https://genshin-impact.fandom.com/wiki/Prosperity_Book",
+            ),
+            source=Source(
+                "Taishan Mansion",
+                "https://genshin-impact.fandom.com/wiki/Taishan_Mansion",
+            ),
         )
 
     @property

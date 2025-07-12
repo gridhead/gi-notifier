@@ -17,13 +17,25 @@ class Wanderer(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Perpetual Caliber", f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Caliber")}"),
-            source = Source("Aeonblight Drake", f"https://genshin-impact.fandom.com/wiki/{quote("Aeonblight_Drake")}")
+            item=Item(
+                "Perpetual Caliber",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Perpetual_Caliber")}",
+            ),
+            source=Source(
+                "Aeonblight Drake",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Aeonblight_Drake")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Daka's Bell", f"https://genshin-impact.fandom.com/wiki/{quote("Daka's_Bell")}"),
-            source = Source("Joururi Workshop", f"https://genshin-impact.fandom.com/wiki/{quote("Joururi_Workshop")}")
+            item=Item(
+                "Daka's Bell",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Daka's_Bell")}",
+            ),
+            source=Source(
+                "Joururi Workshop",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Joururi_Workshop")}",
+            ),
         )

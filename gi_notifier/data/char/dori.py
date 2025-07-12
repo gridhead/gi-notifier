@@ -17,13 +17,25 @@ class Dori(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Thunderclap Fruitcore", f"https://genshin-impact.fandom.com/wiki/{quote("Thunderclap_Fruitcore")}"),
-            source = Source("Electro Regisvines", f"https://genshin-impact.fandom.com/wiki/{quote("Electro_Regisvines")}")
+            item=Item(
+                "Thunderclap Fruitcore",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Thunderclap_Fruitcore")}",
+            ),
+            source=Source(
+                "Electro Regisvines",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Electro_Regisvines")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Bloodjade Branch", f"https://genshin-impact.fandom.com/wiki/{quote("Bloodjade_Branch")}"),
-            source = Source("Beneath the Dragon-Queller", f"https://genshin-impact.fandom.com/wiki/{quote("Beneath_the_Dragon-Queller")}")
+            item=Item(
+                "Bloodjade Branch",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Bloodjade_Branch")}",
+            ),
+            source=Source(
+                "Beneath the Dragon-Queller",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Beneath_the_Dragon-Queller")}",
+            ),
         )

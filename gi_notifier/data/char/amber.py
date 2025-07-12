@@ -17,13 +17,25 @@ class Amber(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Everflame Seed", f"https://genshin-impact.fandom.com/wiki/{quote("Everflame_Seed")}"),
-            source = Source("Pyro Regisvines", f"https://genshin-impact.fandom.com/wiki/{quote("Pyro_Regisvines")}")
+            item=Item(
+                "Everflame Seed",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Everflame_Seed")}",
+            ),
+            source=Source(
+                "Pyro Regisvines",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Pyro_Regisvines")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Dvalin's Sigh", f"https://genshin-impact.fandom.com/wiki/{quote("Dvalin's_Sigh")}"),
-            source = Source("Confront Stormterror", f"https://genshin-impact.fandom.com/wiki/{quote("Confront_Stormterror")}")
+            item=Item(
+                "Dvalin's Sigh",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Dvalin's_Sigh")}",
+            ),
+            source=Source(
+                "Confront Stormterror",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Confront_Stormterror")}",
+            ),
         )

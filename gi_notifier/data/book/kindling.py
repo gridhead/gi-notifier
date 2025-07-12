@@ -6,8 +6,12 @@ class Kindling(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Kindling Books", "https://genshin-impact.fandom.com/wiki/Kindling_Book"),
-            source=Source("Blazing Ruins", "https://genshin-impact.fandom.com/wiki/Blazing_Ruins")
+            item=Item(
+                "Kindling Books", "https://genshin-impact.fandom.com/wiki/Kindling_Book"
+            ),
+            source=Source(
+                "Blazing Ruins", "https://genshin-impact.fandom.com/wiki/Blazing_Ruins"
+            ),
         )
 
     @property

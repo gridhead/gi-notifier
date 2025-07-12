@@ -17,13 +17,25 @@ class Ororon(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Mark of the Binding Blessing", f"https://genshin-impact.fandom.com/wiki/{quote("Mark_of_the_Binding_Blessing")}"),
-            source = Source("Goldflame Qucusaur Tyrant", f"https://genshin-impact.fandom.com/wiki/{quote("Goldflame_Qucusaur_Tyrant")}")
+            item=Item(
+                "Mark of the Binding Blessing",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Mark_of_the_Binding_Blessing")}",
+            ),
+            source=Source(
+                "Goldflame Qucusaur Tyrant",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Goldflame_Qucusaur_Tyrant")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Lightless Silk String", f"https://genshin-impact.fandom.com/wiki/{quote("Lightless_Silk_String")}"),
-            source = Source("All-Devouring Narwhal", f"https://genshin-impact.fandom.com/wiki/{quote("All-Devouring_Narwhal")}")
+            item=Item(
+                "Lightless Silk String",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Lightless_Silk_String")}",
+            ),
+            source=Source(
+                "All-Devouring Narwhal",
+                f"https://genshin-impact.fandom.com/wiki/{quote("All-Devouring_Narwhal")}",
+            ),
         )

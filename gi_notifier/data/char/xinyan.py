@@ -17,13 +17,25 @@ class Xinyan(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Everflame Seed", f"https://genshin-impact.fandom.com/wiki/{quote("Everflame_Seed")}"),
-            source = Source("Pyro Regisvine", f"https://genshin-impact.fandom.com/wiki/{quote("Pyro_Regisvine")}")
+            item=Item(
+                "Everflame Seed",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Everflame_Seed")}",
+            ),
+            source=Source(
+                "Pyro Regisvine",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Pyro_Regisvine")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Tusk of Monoceros Caeli", f"https://genshin-impact.fandom.com/wiki/{quote("Tusk_of_Monoceros_Caeli")}"),
-            source = Source("Enter the Golden House", f"https://genshin-impact.fandom.com/wiki/{quote("Enter_the_Golden_House")}")
+            item=Item(
+                "Tusk of Monoceros Caeli",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Tusk_of_Monoceros_Caeli")}",
+            ),
+            source=Source(
+                "Enter the Golden House",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Enter_the_Golden_House")}",
+            ),
         )

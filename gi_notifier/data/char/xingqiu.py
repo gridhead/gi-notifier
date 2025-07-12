@@ -17,13 +17,24 @@ class Xingqiu(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Cleansing Heart", f"https://genshin-impact.fandom.com/wiki/{quote("Cleansing_Heart")}"),
-            source = Source("Rhodeia of Loch", f"https://genshin-impact.fandom.com/wiki/{quote("Rhodeia_of_Loch")}")
+            item=Item(
+                "Cleansing Heart",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Cleansing_Heart")}",
+            ),
+            source=Source(
+                "Rhodeia of Loch",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Rhodeia_of_Loch")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Tail of Boreas", f"https://genshin-impact.fandom.com/wiki/{quote("Tail_of_Boreas")}"),
-            source = Source("Andrius", f"https://genshin-impact.fandom.com/wiki/{quote("Andrius")}")
+            item=Item(
+                "Tail of Boreas",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Tail_of_Boreas")}",
+            ),
+            source=Source(
+                "Andrius", f"https://genshin-impact.fandom.com/wiki/{quote("Andrius")}"
+            ),
         )

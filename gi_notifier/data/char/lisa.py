@@ -17,13 +17,25 @@ class Lisa(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Lightning Prism", f"https://genshin-impact.fandom.com/wiki/{quote("Lightning_Prism")}"),
-            source = Source("Electro Hypostasis", f"https://genshin-impact.fandom.com/wiki/{quote("Electro_Hypostasis")}")
+            item=Item(
+                "Lightning Prism",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Lightning_Prism")}",
+            ),
+            source=Source(
+                "Electro Hypostasis",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Electro_Hypostasis")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Dvalin's Claw", f"http://genshin-impact.fandom.com/wiki/{quote("Dvalin's_Claw")}"),
-            source = Source("Confront Stormterror", f"https://genshin-impact.fandom.com/wiki/{quote("Confront_Stormterror")}")
+            item=Item(
+                "Dvalin's Claw",
+                f"http://genshin-impact.fandom.com/wiki/{quote("Dvalin's_Claw")}",
+            ),
+            source=Source(
+                "Confront Stormterror",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Confront_Stormterror")}",
+            ),
         )

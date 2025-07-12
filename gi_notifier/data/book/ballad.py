@@ -6,8 +6,12 @@ class Ballad(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Ballad Books", "https://genshin-impact.fandom.com/wiki/Ballad_Book"),
-            source=Source("Forsaken Rift", "https://genshin-impact.fandom.com/wiki/Forsaken_Rift")
+            item=Item(
+                "Ballad Books", "https://genshin-impact.fandom.com/wiki/Ballad_Book"
+            ),
+            source=Source(
+                "Forsaken Rift", "https://genshin-impact.fandom.com/wiki/Forsaken_Rift"
+            ),
         )
 
     @property

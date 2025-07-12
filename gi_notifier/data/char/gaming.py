@@ -17,13 +17,25 @@ class Gaming(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Emperor's Resolution", f"https://genshin-impact.fandom.com/wiki/{quote("Emperor's_Resolution")}"),
-            source = Source("Emperor of Fire and Iron", f"https://genshin-impact.fandom.com/wiki/{quote("Emperor_of_Fire_and_Iron")}")
+            item=Item(
+                "Emperor's Resolution",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Emperor's_Resolution")}",
+            ),
+            source=Source(
+                "Emperor of Fire and Iron",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Emperor_of_Fire_and_Iron")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Lightless Mass", f"https://genshin-impact.fandom.com/wiki/{quote("Lightless_Mass")}"),
-            source = Source("All-Devouring Narwhal", f"https://genshin-impact.fandom.com/wiki/{quote("All-Devouring_Narwhal")}")
+            item=Item(
+                "Lightless Mass",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Lightless_Mass")}",
+            ),
+            source=Source(
+                "All-Devouring Narwhal",
+                f"https://genshin-impact.fandom.com/wiki/{quote("All-Devouring_Narwhal")}",
+            ),
         )

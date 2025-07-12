@@ -6,8 +6,13 @@ class Transience(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Transience Books", "https://genshin-impact.fandom.com/wiki/Transience_Book"),
-            source=Source("Violet Court", "https://genshin-impact.fandom.com/wiki/Violet_Court")
+            item=Item(
+                "Transience Books",
+                "https://genshin-impact.fandom.com/wiki/Transience_Book",
+            ),
+            source=Source(
+                "Violet Court", "https://genshin-impact.fandom.com/wiki/Violet_Court"
+            ),
         )
 
     @property

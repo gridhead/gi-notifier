@@ -17,13 +17,25 @@ class Shenhe(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Dragonheir's False Fin", f"https://genshin-impact.fandom.com/wiki/{quote("Dragonheir's_False_Fin")}"),
-            source = Source("Coral Defenders", f"https://genshin-impact.fandom.com/wiki/{quote("Coral_Defenders")}")
+            item=Item(
+                "Dragonheir's False Fin",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Dragonheir's_False_Fin")}",
+            ),
+            source=Source(
+                "Coral Defenders",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Coral_Defenders")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Hellfire Butterfly", f"https://genshin-impact.fandom.com/wiki/{quote("Hellfire_Butterfly")}"),
-            source = Source("Narukami Island: Tenshukaku", f"https://genshin-impact.fandom.com/wiki/{quote("Narukami_Island:_Tenshukaku")}")
+            item=Item(
+                "Hellfire Butterfly",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Hellfire_Butterfly")}",
+            ),
+            source=Source(
+                "Narukami Island: Tenshukaku",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Narukami_Island:_Tenshukaku")}",
+            ),
         )

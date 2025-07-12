@@ -16,27 +16,30 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     data = load_data()
 
     if user_id not in data:
-        data[user_id] = {
-            "user_id": user.id,
-            "chat_bot_id": None,
-            "group_bot_id": []
-        }
+        data[user_id] = {"user_id": user.id, "chat_bot_id": None, "group_bot_id": []}
 
     if chat.type == "private":
         data[user_id]["chat_bot_id"] = chat_id
     else:
         if chat_id not in data[user_id]["group_bot_id"]:
             data[user_id]["group_bot_id"].append(chat_id)
-        
+
     save_data(data)
 
     username = user.username or user.full_name
-    await update.message.reply_text(f"Hello, {username}! Welcome to the Genshin Impact Notifier Bot.")  #noqa: E501
-    config.logger.debug(f"User {username} started bot in chat: {chat.title}, id:{chat_id}")
+    await update.message.reply_text(
+        f"Hello, {username}! Welcome to the Genshin Impact Notifier Bot."
+    )
+    config.logger.debug(
+        f"User {username} started bot in chat: {chat.title}, id:{chat_id}"
+    )
+
 
 async def resinday(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not context.args:
-        await update.effective_message.reply_text("Please specify a character name, e.g. /resin Amber")  #noqa: E501
+        await update.effective_message.reply_text(
+            "Please specify a character name, e.g. /resin Amber"
+        )
 
     name = " ".join(context.args).title()
     try:
@@ -46,4 +49,6 @@ async def resinday(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         await update.effective_message.reply_text(resin_plan, parse_mode="HTML")
     except Exception:
-        await update.effective_message.reply_text(f"No such character '{name}' is available. Feel free to try some other character.")  #noqa: E501
+        await update.effective_message.reply_text(
+            f"No such character '{name}' is available. Feel free to try some other character."
+        )

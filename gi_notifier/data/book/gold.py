@@ -7,7 +7,10 @@ class Gold(MaterialGroupBase):
     def drop(self) -> Drop:
         return Drop(
             item=Item("Gold Books", "https://genshin-impact.fandom.com/wiki/Gold_Book"),
-            source=Source("Taishan Mansion", "https://genshin-impact.fandom.com/wiki/Taishan_Mansion")
+            source=Source(
+                "Taishan Mansion",
+                "https://genshin-impact.fandom.com/wiki/Taishan_Mansion",
+            ),
         )
 
     @property

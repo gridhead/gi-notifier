@@ -6,8 +6,13 @@ class Praxis(MaterialGroupBase):
     @property
     def drop(self) -> Drop:
         return Drop(
-            item=Item("Praxis Books", "https://genshin-impact.fandom.com/wiki/Praxis_Book"),
-            source=Source("Steeple of Ignorance", "https://genshin-impact.fandom.com/wiki/Steeple_of_Ignorance")
+            item=Item(
+                "Praxis Books", "https://genshin-impact.fandom.com/wiki/Praxis_Book"
+            ),
+            source=Source(
+                "Steeple of Ignorance",
+                "https://genshin-impact.fandom.com/wiki/Steeple_of_Ignorance",
+            ),
         )
 
     @property

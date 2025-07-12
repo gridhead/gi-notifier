@@ -17,13 +17,25 @@ class Sethos(CharacterBase):
     @property
     def normal_boss_drop(self):
         return Drop(
-            item = Item("Cloudseam Scale", f"https://genshin-impact.fandom.com/wiki/{quote("Cloudseam_Scale")}"),
-            source = Source("Solitary Suanni", f"https://genshin-impact.fandom.com/wiki/{quote("Solitary_Suanni")}")
+            item=Item(
+                "Cloudseam Scale",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Cloudseam_Scale")}",
+            ),
+            source=Source(
+                "Solitary Suanni",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Solitary_Suanni")}",
+            ),
         )
 
     @property
     def weekly_boss_drop(self):
         return Drop(
-            item = Item("Daka's Bell", f"https://genshin-impact.fandom.com/wiki/{quote("Daka's_Bell")}"),
-            source = Source("Joururi Workshop", f"https://genshin-impact.fandom.com/wiki/{quote("Joururi_Workshop")}")
+            item=Item(
+                "Daka's Bell",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Daka's_Bell")}",
+            ),
+            source=Source(
+                "Joururi Workshop",
+                f"https://genshin-impact.fandom.com/wiki/{quote("Joururi_Workshop")}",
+            ),
         )
