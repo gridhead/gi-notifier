@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from .models.base import CharacterBase
-from .models.models import Resin, Weekday
+from .models.models import DailyCheckin, Resin, Weekday
 
 
 def get_today() -> Weekday:
@@ -33,5 +33,7 @@ def generate_daily_resin_plan(today: Weekday, characters: list[CharacterBase]) -
 
     if today.value == "Monday":
         message_lines.append(Resin().transient_resin.to_claim())
+    
+    message_lines.append(DailyCheckin().reward.to_claim())
 
     return "\n".join(message_lines)

@@ -50,7 +50,7 @@ class Drop:
 
     def to_claim(self) -> str:
         return (
-            f"""Do not forget to claim your <a href="{self.item.link}">{self.item.name}</a> """
+            f"""Claim your <a href="{self.item.link}">{self.item.name}</a> """
             f"""from <a href="{self.source.link}">{self.source.name}</a>"""
         )
 
@@ -127,6 +127,16 @@ class ConstantResource:
         )
     )
     resin: Resin = field(default_factory=Resin)
+
+
+@dataclass
+class DailyCheckin:
+    reward: Drop = field(
+        default_factory = lambda: Drop(
+            item = Item("HoYoLAB Community Daily Check-In", "https://genshin-impact.fandom.com/wiki/HoYoLAB_Community_Daily_Check-In"),
+            source = Source("HoYoLAB", "https://www.hoyolab.com")
+        )
+    )
 
 
 @dataclass
