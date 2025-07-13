@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from .models.base import CharacterBase
-from .models.models import DailyCheckin, Resin, Weekday
+from .models.models import DailyCheckin, Resin, ShopReset, Weekday
 
 
 def get_today() -> Weekday:
@@ -10,6 +10,10 @@ def get_today() -> Weekday:
 
 def generate_daily_resin_plan(today: Weekday, characters: list[CharacterBase]) -> str:
     message_lines = [f"<b>{today.value}</b>", ""]
+
+    if datetime.now().day == 1:
+        message_lines.append(ShopReset().to_purchase())
+        message_lines.append("")
 
     for character in characters:
         message_lines.append(f"<b>For {character.name}</b>\n")
@@ -33,7 +37,7 @@ def generate_daily_resin_plan(today: Weekday, characters: list[CharacterBase]) -
 
     if today.value == "Monday":
         message_lines.append(Resin().transient_resin.to_claim())
-    
+
     message_lines.append(DailyCheckin().reward.to_claim())
 
     return "\n".join(message_lines)
