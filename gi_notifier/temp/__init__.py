@@ -1,4 +1,4 @@
-from ..data.char.emilie import Emilie
-from ..data.char.mavuika import Mavuika
+from ..data.char.citlali import Citlali
+from ..data.char.ineffa import Ineffa
 
-characters = [Emilie(), Mavuika()]
+characters = [Ineffa(), Citlali()]
