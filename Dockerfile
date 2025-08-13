@@ -1,5 +1,5 @@
 # Base image: Fedora minimal
-FROM registry.fedoraproject.org/fedora-minimal:42 as base
+FROM registry.fedoraproject.org/fedora-minimal:44 as base
 
 # Application image
 FROM base as application
